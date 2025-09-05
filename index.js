@@ -17,9 +17,6 @@ async function main() {
   const token = typeof tokenObj === "string" ? JSON.parse(tokenObj).token : tokenObj.token;
   console.log("Bot logged in with token này:", token);
 
-
-
- 
   client.onChannelMessage(async (event) => {
     const text = event?.content?.t?.toLowerCase();
     if (!text) return;

@@ -7,11 +7,8 @@ module.exports = async function handleHelp(client, event) {
       Xin chào! Tôi là bot hỗ trợ phát nhạc trong kênh họp trực tuyến.
 
       Các lệnh bạn có thể sử dụng:
-      - *playmusic: Bắt đầu phát nhạc trong kênh họp.
+      - *playmusic <url>: Bắt đầu phát nhạc trong kênh họp theo url mp3.
       - *searchmusic <name_music>: Tìm kiếm bài hát theo tên.
-      - *stopmusic: Dừng phát nhạc.
-      - *skipmusic: Bỏ qua bài hát hiện tại.
-      - *queuemusic: Hiển thị danh sách bài hát trong hàng đợi.
 
       Vui lòng đảm bảo rằng bạn đã thiết lập mã họp (meeting code) cho kênh trước khi sử dụng các lệnh phát nhạc.
 
