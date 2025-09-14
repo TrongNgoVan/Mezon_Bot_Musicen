@@ -1,5 +1,5 @@
 {
-  "name": "mezon-bot-example",
+  "name": "mezon-bot-musicen",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,8 @@
   "dependencies": {
     "axios": "^1.11.0",
     "dotenv": "^16.4.5",
-    "mezon-bot-example": "file:",
-    "mezon-sdk": "^2.7.93"
+    "mezon-bot-musicen": "file:",
+    "mezon-sdk": "^2.8.12"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
