@@ -4,20 +4,18 @@
 
 ## 1. Giới thiệu
 
-Bot Music Mezon là chatbot âm nhạc thông minh cho nền tảng Mezon, giúp phòng voice trở nên sống động với nhiều tính năng mới:
+Bot Music Mezon là chatbot âm nhạc ( media gồm mp3,mp4) thông minh cho nền tảng Mezon, giúp phòng voice trở nên sống động với nhiều tính năng mới:
 
 - 🚀 Phát nhạc trực tiếp từ URL (mp3, mp4, m3u8)
-- 📋 Quản lý & phát nhạc theo ID bài hát
-- 🗂️ Hiển thị danh sách nhạc dạng bảng đẹp, đầy đủ thông tin
-- ℹ️ Xem chi tiết bài hát với icon, link, định dạng
-- 🔎 Tìm kiếm bài hát theo tên, nghệ sĩ, thể loại
+- 📋 Phát nhạc theo ID bài hát
+- 🗂️ Hiển thị danh sách nhạc của hệ thống với đầy đủ thông tin.
+- ℹ️ Xem chi tiết thông tin bài hát theo ID
+- 🔎 Tìm kiếm bài hát trên Youtube 📺 và nghe trong chanel chat
 - 🤖 Gợi ý nhạc AI Gemini theo tâm trạng/chủ đề
 - 📝 Xem hướng dẫn, thông tin bot
-- 💬 Tương tác qua các lệnh chat đơn giản, UI mezon đẹp
 - 🛠️ Tích hợp mezon SDK, phát media trực tiếp trong phòng voice
 - 🔒 Quản lý nhạc qua file JSON, dễ dàng mở rộng
 
-Phù hợp cho các cuộc thi, demo sản phẩm, hoặc làm nền tảng phát triển các tính năng âm nhạc nâng cao.
 
 ---
 
@@ -29,7 +27,7 @@ Phù hợp cho các cuộc thi, demo sản phẩm, hoặc làm nền tảng phá
 
 ```bash
 git clone <repo-url>
-cd Mezon_Bot_Musicen
+cd bot-music-sample
 npm install
 ```
 
@@ -73,11 +71,11 @@ npm start
 	```
 	Xem chi tiết bài hát với icon, link, định dạng.
 
-- 🔍 **Tìm kiếm bài hát**
+- 🔍 **Tìm kiếm bài hát trên Youtube và nghe trong channel chat**
 	```
 	*search <từ khóa>
 	```
-	Tìm kiếm theo tên, nghệ sĩ, thể loại.
+	Tìm kiếm theo tên, nghệ sĩ, thể loại hoặc bất cứ tiêu đề gì.
 
 - 🤖 **Gợi ý nhạc AI Gemini**
 	```
@@ -92,7 +90,7 @@ npm start
 	Xem hướng dẫn sử dụng và các lệnh hỗ trợ.
 
 #### Lưu ý
-- Đảm bảo đã join voice channel trước khi phát nhạc
+- Đảm bảo đã join voice channel trước khi phát media
 - Bot hỗ trợ cả định dạng mp3, mp4, m3u8
 
 
