@@ -1,6 +1,7 @@
 ## Create your Mezon application
 
 Visit the [Developers Portal](https://dev-developers.nccsoft.vn/) to create your application.
+hahahaa
 
 ## Add bot to your clan
 
