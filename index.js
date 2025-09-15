@@ -7,6 +7,8 @@ const handlePlayURL = require("./commands/playurl");
 const handleSearch = require("./commands/search");
 const handleListMusic = require("./commands/listmusic");
 const handlePlayId = require("./commands/playid");
+const handleInfor = require("./commands/infor");
+const handleRecommend = require("./commands/recommend");
 
 async function main() {
   const client = new MezonClient(process.env.APPLICATION_TOKEN); // Nếu bot trong Product thì dùng cái này
@@ -36,6 +38,14 @@ async function main() {
     if (text.startsWith("*playid")) {
  
       return handlePlayId(client, event);
+    }
+
+    if (text.startsWith("*infor")) {
+      return handleInfor(client, event);
+    }
+
+    if (text.startsWith("*recommend")) {
+      return handleRecommend(client, event);
     }
 
   });

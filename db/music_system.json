@@ -2,7 +2,7 @@
     {
         "id": "0",
         "url": "https://cdn.mezon.ai/sounds/7346483973050015537.mp3",
-        "name": "Intro Mezon",
+        "name": "Intro Mezon, For Working",
         "title": "Nhạc working mezon",
         "artist": "Mezon",
         "type": "mp3"
@@ -12,14 +12,14 @@
         "id": "1",
         "url": "https://cdn-api.mezon.ai/mezon/0/1840699689087799296/1940048388468772900/1757390436382_AiChoAi___FloD_ft._M___Giang_Nguyen_.mp3",
         "name": "Ai Chờ Ai",
-        "title": "Nhạc Trẻ",
+        "title": "Nhạc Trẻ, Tình Yêu",
         "artist": "FloD ft. Giang Nguyễn",
         "type": "mp3"
     },
     {
         "id": "2",
         "url": "https://cdn.mezon.ai/0/1840699689087799296/1940048388468772900/1757856906249_AnNutNhoThaGiacMo_SonTungMTP.mp3",
-        "name": "Ân Nút Nhớ Thả Giấc Mơ",
+        "name": "Ấn Nút Nhớ Thả Giấc Mơ",
         "title": "Nhạc Gia Đình",
         "artist": "Sơn Tùng M-TP",
         "type": "mp3"
@@ -29,7 +29,7 @@
         "id": "3",
         "url": "https://cdn.mezon.ai/0/1840699689087799296/1940048388468772900/1757857076008_Anh__ang_N_i___uMiu_L_.mp3",
         "name": "Anh Đang Nơi Đâu",
-        "title": "Nhạc Trẻ",
+        "title": "Nhạc Trẻ, Tình Yêu",
         "artist": "Miu Lê",
         "type": "mp3"
     },
@@ -37,7 +37,7 @@
         "id": "4",
         "url": "https://cdn.mezon.ai/0/1840699689087799296/1940048388468772900/1757859272428_lichsu.mp4",
         "name": "Mẹ Yêu Con ( Mùi cỏ cháy OST)",
-        "title": "Nhạc Phim, Nhạc Đất Nước",
+        "title": "Nhạc Phim, Nhạc Đất Nước, Tình cảm gia đình",
         "artist": "Anh trai vượt ngàn chông gai",
         "type": "mp4"
     },
@@ -45,7 +45,7 @@
         "id": "5",
         "url": "https://cdn.mezon.ai/0/1840699689087799296/1940048388468772900/1757867474873_AnhKhacHayEmKhac_KhacViet.mp3",
         "name": "Anh Khác Hay Em Khác",
-        "title": "Nhạc Trẻ",
+        "title": "Nhạc Trẻ, Tình Yêu",
         "artist": "Khắc Việt",
         "type": "mp3"
     },
@@ -53,12 +53,9 @@
         "id": "6",
         "url": "https://cdn.mezon.ai/0/1840699689087799296/1940048388468772900/1757867573413__m_Th_m_B_n_Em.mp3",
         "name": "Âm thầm bên em",
-        "title": "Nhạc Trẻ",
+        "title": "Nhạc Trẻ , Tình Yêu",
         "artist": "Sơn Tùng M-TP",
         "type": "mp3"
-    },
-    {
-        
     }
 
 ]

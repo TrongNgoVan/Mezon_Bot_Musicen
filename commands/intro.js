@@ -2,10 +2,10 @@ module.exports = async function handleIntro(client, event) {
   try {
     const channel = await client.channels.fetch(event.channel_id);
 
-    // Định dạng đẹp cho message
+
     const introText = `👋 Xin chào!\n🎧 Tôi là bot hỗ trợ phát media trong voice channel trên Mezon.\n✨ *Các lệnh bạn có thể sử dụng:*`;
 
-    // Block hướng dẫn lệnh
+
     const preText = `
 *playmusic <url>
   🎵 Phát nhạc từ URL (mp3, mp4, m3u8)
@@ -23,9 +23,19 @@ module.exports = async function handleIntro(client, event) {
 *searchmusic <từ khóa>
   ▶️ Tìm kiếm video YouTube, trả về link và trình diễn video trên chat
   Ví dụ: *searchmusic thất tình
+
+*infor <id>
+  ℹ️ Xem thông tin chi tiết bài hát theo ID
+  Ví dụ: *infor 2
+
+*recommend <từ khóa>
+  🎼 Gợi ý 1 đến 3 bài hát theo từ khóa dựa trên kho nhạc hệ thống
+  Ví dụ: *recommend nhạc thất tình buồn
+
+
 `;
 
-    // mk chỉ cho block code
+
     const t = introText + "\n" + preText;
     const mk = [
       { type: "pre", s: introText.length + 2, e: t.length }

@@ -47,7 +47,7 @@ module.exports = async function handleSearch(client, event) {
     
       } catch (err) {
         console.error(err);
-        // fallback gửi lỗi cho user
+      
         const errorMsg = 'Đã xảy ra lỗi khi tìm kiếm nhạc.';
         try {
           if (event.message_id) {
