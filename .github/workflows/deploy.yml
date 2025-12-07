@@ -1,0 +1,86 @@
+name: Build EXE on GitHub, Deploy to Self-Hosted
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+env:
+  PROD_DIR: 'C:\Users\trong.ngovan\MyBot'
+  SERVICE_NAME: 'BotMusicen'
+
+jobs:
+  build:
+    name: Build EXE with pkg
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Install pkg
+        run: npm install -g pkg
+
+      - name: Build EXE (Node 18)
+        run: |
+          pkg index.js --targets node18-win-x64 --output bot.exe
+
+      - name: Upload bot.exe
+        uses: actions/upload-artifact@v4
+        with:
+          name: bot-exe
+          path: bot.exe
+
+
+  deploy:
+    name: Deploy to Windows Self-Hosted Runner
+    runs-on: [self-hosted, Windows, X64]
+    needs: build
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: bot-exe
+          path: .\artifact
+
+      - name: Deploy bot.exe
+        shell: pwsh
+        env:
+          PROD_DIR: ${{ env.PROD_DIR }}
+          SERVICE_NAME: ${{ env.SERVICE_NAME }}
+        run: |
+          $prod = $env:PROD_DIR
+          $svc  = $env:SERVICE_NAME
+          $exe  = Join-Path $PWD 'artifact\bot.exe'
+
+          Write-Host "Stopping service if exists..."
+          if (Get-Service -Name $svc -ErrorAction SilentlyContinue) {
+            Stop-Service -Name $svc -Force
+            Start-Sleep -Seconds 1
+          }
+
+          Write-Host "Copying bot.exe to $prod"
+          if (-not (Test-Path $prod)) {
+            New-Item -ItemType Directory -Path $prod | Out-Null
+          }
+          Copy-Item -Path $exe -Destination "$prod\bot.exe" -Force
+
+          Write-Host "Starting service..."
+          if (Get-Service -Name $svc -ErrorAction SilentlyContinue) {
+            Start-Service -Name $svc
+          } else {
+            Write-Host "Service $svc not found — create it with NSSM first."
+          }
+
+      - name: Cleanup
+        if: always()
+        run: Remove-Item -Recurse -Force .\artifact

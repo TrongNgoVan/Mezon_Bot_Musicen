@@ -1,5 +1,3 @@
-
-
 # 🎧 Bot Music Mezon
 
 ## 1. Giới thiệu
@@ -53,11 +51,11 @@ npm start
 	```
 	Ví dụ: `*playmusic https://cdn.mezon.ai/sounds/7346483973050015537.mp3`
 
-- 🔎 **Phát nhạc theo ID**
+- 🔎 **Phát nhạc có sẵn của hệ thống**
 	```
-	*playid <id>
+	*playmedia
 	```
-	Ví dụ: `*playid 2`
+	Sẽ ra form chứa danh sách nhạc ( mp3&mp4) để play
 
 - 📑 **Xem danh sách bài hát**
 	```
