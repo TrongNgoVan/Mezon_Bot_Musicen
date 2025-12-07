@@ -24,7 +24,8 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run: npm ci
+        run: |
+          npm ci
 
       - name: Install pkg
         run: npm install -g pkg
@@ -50,17 +51,17 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: bot-exe
-          path: .\artifact
+          path: artifact
 
       - name: Deploy bot.exe
-        shell: pwsh
+        shell: powershell
         env:
           PROD_DIR: ${{ env.PROD_DIR }}
           SERVICE_NAME: ${{ env.SERVICE_NAME }}
         run: |
           $prod = $env:PROD_DIR
           $svc  = $env:SERVICE_NAME
-          $exe  = Join-Path $PWD 'artifact\bot.exe'
+          $exe  = Join-Path $PWD "artifact\bot.exe"
 
           Write-Host "Stopping service if exists..."
           if (Get-Service -Name $svc -ErrorAction SilentlyContinue) {
@@ -81,6 +82,7 @@ jobs:
             Write-Host "Service $svc not found — create it with NSSM first."
           }
 
-      - name: Cleanup
+      - name: Cleanup Artifact
         if: always()
-        run: Remove-Item -Recurse -Force .\artifact
+        shell: powershell
+        run: Remove-Item -Path ".\artifact" -Recurse -Force
