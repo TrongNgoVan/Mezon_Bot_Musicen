@@ -6,18 +6,17 @@ on:
   workflow_dispatch:
 
 env:
-  PROD_DIR: "C:\\Users\\trong.ngovan\\MyBot"
-  SERVICE_NAME: "BotMusicen"
+  PROD_DIR: 'C:\Users\trong.ngovan\MyBot'
+  SERVICE_NAME: 'BotMusicen'
 
 jobs:
-
   build:
     name: Build EXE with pkg
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-      uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Use Node.js 18
         uses: actions/setup-node@v4
@@ -25,13 +24,15 @@ jobs:
           node-version: 18
 
       - name: Install Dependencies
-        run: npm ci
+        run: |
+          npm ci
 
       - name: Install pkg
         run: npm install -g pkg
 
       - name: Build EXE (Node 18)
-        run: pkg index.js --targets node18-win-x64 --output bot.exe
+        run: |
+          pkg index.js --targets node18-win-x64 --output bot.exe
 
       - name: Upload bot.exe
         uses: actions/upload-artifact@v4
@@ -46,11 +47,10 @@ jobs:
     needs: build
 
     steps:
-      # Fix ExecutionPolicy (bắt buộc cho Windows Server)
       - name: Allow PowerShell Scripts
         shell: powershell
         run: Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
-
+        
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
@@ -65,7 +65,7 @@ jobs:
         run: |
           $prod = $env:PROD_DIR
           $svc  = $env:SERVICE_NAME
-          $exe  = Join-Path $PWD "artifact/bot.exe"
+          $exe  = Join-Path $PWD "artifact\bot.exe"
 
           Write-Host "Stopping service if exists..."
           if (Get-Service -Name $svc -ErrorAction SilentlyContinue) {
@@ -77,16 +77,16 @@ jobs:
           if (-not (Test-Path $prod)) {
             New-Item -ItemType Directory -Path $prod | Out-Null
           }
-          Copy-Item -Path $exe -Destination "$prod\\bot.exe" -Force
+          Copy-Item -Path $exe -Destination "$prod\bot.exe" -Force
 
           Write-Host "Starting service..."
           if (Get-Service -Name $svc -ErrorAction SilentlyContinue) {
             Start-Service -Name $svc
           } else {
-            Write-Host "⚠ Service $svc not found — create it with NSSM first."
+            Write-Host "Service $svc not found — create it with NSSM first."
           }
 
       - name: Cleanup Artifact
         if: always()
         shell: powershell
-        run: Remove-Item -Path ".\\artifact" -Recurse -Force
+        run: Remove-Item -Path ".\artifact" -Recurse -Force
