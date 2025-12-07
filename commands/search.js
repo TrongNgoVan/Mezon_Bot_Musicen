@@ -1,31 +1,29 @@
-
-const axios = require('axios');
-
-
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 module.exports = async function handleSearch(client, event) {
   try {
-  
+  // use fetch if axios is not available
     const query = event.content.t.split(" ").slice(1).join(" ");
     let videoUrl = '';
       try {
         if (query && YOUTUBE_API_KEY) {
-          const res = await axios.get('https://www.googleapis.com/youtube/v3/search', {
-            params: {
-              part: 'snippet',
-              q: query,
-              key: YOUTUBE_API_KEY,
-              maxResults: 1,
-              type: 'video',
-            },
-          });
-          const items = res.data.items;
+          const res = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${encodeURIComponent(query)}&key=${YOUTUBE_API_KEY}&maxResults=1&type=video`);
+          const data = await res.json();
+          const items = data.items;
           if (items && items.length > 0) {
             const videoId = items[0].id.videoId;
             videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
           } else {
             videoUrl = 'Không tìm thấy kết quả phù hợp.';
           }
+        } else {
+          videoUrl = 'Thiếu từ khóa hoặc API key.';
+        }
+    
+        if (videoUrl && videoUrl.startsWith('http')) {
+          const prefix = '🔎 Kết quả tìm kiếm cho: ';
+          const text = `${prefix}${query || '...'} ${videoUrl}`;
+          const s = text.indexOf(videoUrl);
+          const e = s + videoUrl.length;
         } else {
           videoUrl = 'Thiếu từ khóa hoặc API key.';
         }

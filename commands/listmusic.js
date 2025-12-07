@@ -1,10 +1,9 @@
 module.exports = async function handleListMusic(client, event) {
   const fs = require('fs');
-  const path = require('path');
 
   try {
     // Đọc file nhạc
-    const dbPath = path.join(__dirname, '../db/music_system.json');
+    const dbPath = process.env.MUSIC_JSON_PATH ;
     const raw = fs.readFileSync(dbPath, 'utf8');
     const items = JSON.parse(raw);
 

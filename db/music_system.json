@@ -56,6 +56,391 @@
         "title": "Nhạc Trẻ , Tình Yêu",
         "artist": "Sơn Tùng M-TP",
         "type": "mp3"
-    }
+    },
+    {
+        "id": "7",
+        "url": "https://cdn.mezon.ai/0/1840699689087799296/1940048388468772900/1762274212695_PhiaSauMotCoGai_SoobinHoangSon.mp3",
+        "name": "Phía Sau Một Cô Gái",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Soobin Hoàng Sơn",
+        "type": "mp3"
+    },
+    {
+        "id": "8",
+        "url": "https://cdn.mezon.ai/1940048388468772864/1992141161300496384.mp3",
+        "name": "Bầu trời mới",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "DaLAB ft. Minh Tốc",
+        "type": "mp3"
+    },
+    {
+        "id": "9",
+        "url": "https://cdn.mezon.ai/1940048388468772864/1992156361231699968.mp3",
+        "name": "Buông Đôi Tay Nhau Ra",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Sơn Tùng M-TP",
+        "type": "mp3"
+    },
+    {
+        "id": "10",
+        "url": "https://cdn.mezon.ai/1940048388468772864/1992156721895706624.mp3",
+        "name": "Cause I Love You",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Noo Phước Thịnh",
+        "type": "mp3"
+    },
+    {
+        "id": "11",
+        "url": "https://cdn.mezon.ai/1940048388468772864/1992157615227932672.mp3",
+        "name": "Có anh ở đây rồi",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Anh Quân Idol",
+        "type": "mp3"
+    },
+    {
+        "id": "12",
+        "url": "https://cdn.mezon.ai/1940048388468772864/1992445504218206208.mp3",
+        "name": "Có không giữ mất đừng tìm",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Cảnh Minh",
+        "type": "mp3"
+    },
+    {
+        "id": "13",
+        "url": "https://cdn.mezon.ai/1940048388468772864/1992446360867049472.mp3",
+        "name": "Cô gái đến từ hôm qua",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Mỹ Tâm",
+        "type": "mp3"
+    },
+    {
+        "id": "14",
+        "url": "https://cdn.mezon.ai/1940048388468772864/1992446360929964032.mp3",
+        "name": "Cơn mưa tình yêu",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Phương Linh ft. Hà Anh Tuấn",
+        "type": "mp3"
+    },
+    {
+        "id": "15",
+        "url": "https://cdn.mezon.ai/1940048388468772864/1992446360799940608.mp3",
+        "name": "Chắc ai đó sẽ về",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Sơn Tùng M-TP",
+        "type": "mp3"
+    },
+    {
+        "id": "16",
+        "url": "https://cdn.mezon.ai/1940048388468772864/1992448648318816256.mp3",
+        "name": "Gửi anh xa nhớ",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Bích Phương",
+        "type": "mp3"
+    },
+    {
+        "id": "17",
+        "url": "https://cdn.mezon.ai/1940048388468772864/1992446252679172096.mp3",
+        "name": "Cơn mưa ngang qua",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Sơn Tùng M-TP",
+        "type": "mp3"
+    },
+    {   
+        "id": "18",
+        "url": "https://cdn.mezon.ai/1950875350829371392/1995131812367568896.mp3",
+        "name": "Anh sợ mất em"   ,
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "The Men",
+        "type": "mp3"
+    },
+    {
+        "id" : "19",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512239/DieuUocGianDon-AkiraPhan_nhcyds.mp3",
+        "name": "Điều Ước Giản Đơn",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Akira Phan",
+        "type": "mp3"
+    },
+    {
+        "id": "20",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512238/%C4%90%C6%B0a_nhau_%C4%91i_tr%E1%BB%91n_-_%C4%90en_ft_Linh_C%C3%A1o_xcatgk.mp3",
+        "name": "Đưa Nhau Đi Trốn",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Đen ft. Linh Cáo",
+        "type": "mp3"
+    },
+    {  
+        "id": "21",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512232/GiacMoThanTien-MiuLe_ukpjby.mp3",
+        "name": "Giấc Mơ Thần Tiên",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Miu Lê",
+        "type": "mp3"
+    },
+    {
+        "id": "22",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512232/C%C3%A1nh_Thi%E1%BB%87p_%C4%90%E1%BA%A7u_Xu%C3%A2n_Lofi_Ver..mp3_iufips.mp3",
+        "name": "Cánh Thiệp Đầu Xuân Lofi Ver",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Nguyễn Thành Đạt",
+        "type": "mp3"
+    },
+    {
+        "id": "23",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512232/GiacMoTrua-ThuyChi_qpcmqi.mp3",
+        "name": "Giấc Mơ Trưa",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Thùy Chi",
+        "type": "mp3"
+    }, 
+    {
+        "id": "24",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512228/GuongMatLaLam-MrSiro-4583437_t9ewnz.mp3",
+        "name": "Gương Mặt Lạ Lẫm",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Mr.Siro",
+        "type": "mp3"
+    },
+    {
+        "id": "25",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512229/EmPhaiQuenAnh-ChauKhaiPhong_ngpiju.mp3",
+        "name": "Em Phải Quên Anh",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Châu Khải Phong",
+        "type": "mp3"
+    },
+    { 
+        "id": "26",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512227/EmNhoAnh-MiuLe_tklpla.mp3",
+        "name": "Em Nhớ Anh",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Miu Lê",
+        "type": "mp3"
+    },
+    { 
+        "id": "27",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512226/G%C3%B3c_Nh%E1%BB%8F_Trong_Tim_-_Kh%E1%BB%9Fi_My_Video_Lyric_HD.mp3_gbvdx4.mp3",
+        "name": "Góc Nhớ Trong Tim",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Khởi My",
+        "type": "mp3"
+    },
+    {
+        "id": "28",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512222/Em_Y%C3%AAu_-_Rocker_Nguy%E1%BB%85n_douyco.mp3",
+        "name": "Em Yêu",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Rocker Nguyễn",
+        "type": "mp3"
+    },
+    { 
+        "id": "29",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512222/EmLaHanhPhucTrongAnh-HoQuangHieu_skny40.mp3",
+        "name": "Em Là Hạnh Phúc Trong Anh",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Hồ Quang Hiếu",
+        "type": "mp3"
+    },
+    {
+        "id": "30",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512223/EmCoYeuAnhKhong-KhanhPhuong_ujhe2n.mp3",
+        "name": "Em Có Yêu Anh Không",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Khánh Phương",
+        "type": "mp3"
+    },
+    {
+        "id": "31",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512220/Em_%C6%A0i_Anh_Ph%E1%BA%A3i_L%C3%A0m_Sao_Remix_xwbww1.mp3",
+        "name": "Em Ơi Anh Phải Làm Sao Remix",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Dương Minh Tuấn",
+        "type": "mp3"
+    },
+    {
+        "id": "32",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512218/%C4%90i%E1%BB%81u_Anh_Bi%E1%BA%BFt_-_Chi_D%C3%A2n_akeejh.mp3",
+        "name": "Điều Anh Biết",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Chi Dân",
+        "type": "mp3"
+    },
 
+    {
+        "id": "33",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512218/%C4%90i%E1%BB%81u_Kh%E1%BB%95_T%C3%A2m_Nh%E1%BA%A5t_Ch%C3%A2u_Kh%E1%BA%A3i_Phong_ixbfcx.mp3",
+        "name": "Điều Khổ Tâm Nhất",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Châu Khải Phong",
+        "type": "mp3"
+    },
+    {
+        "id": "34",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512216/Em_c%E1%BB%A7a_qu%C3%A1_kh%E1%BB%A9_Huy_Nam_nwbfja.mp3",
+        "name": "Em Của Quá Khứ",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Huy Nam",
+        "type": "mp3"
+    },
+    {
+        "id": "35",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512214/%C4%90%C3%A3_L%E1%BB%A1_Y%C3%AAu_Em_Nhi%E1%BB%81u.mp3_cbfqh8.mp3",
+        "name": "Đã Lỡ Yêu Em Nhiều",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "JustaTee",
+        "type": "mp3"
+    },
+    {
+        "id": "36",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512214/ChungTaKhongThuocVeNhau-SonTungMTP_qakcbe.mp3",
+        "name": "Chúng Ta Không Thuộc Về Nhau",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Sơn Tùng M-TP",
+        "type": "mp3"
+
+    },
+    {
+        "id": "37",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512213/DuoiNhungConMua-MrSiro-4130894_g6wpbm.mp3",
+        "name": "Dưới Những Cơn Mưa",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Mr.Siro",
+        "type": "mp3"
+    },
+    {
+        "id": "38",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512212/DungBuongTayAnh-HoQuangHieu_i4bdt9.mp3",
+        "name": "Đừng Buông Tay Anh",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Hồ Quang Hiếu",
+        "type": "mp3"
+    },
+    {
+        "id": "39",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512212/DungQuenTenAnh_adpj5l.mp3",
+        "name": "Đừng Quên Tên Anh",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Hoa Vinh",
+        "type": "mp3"
+    },
+    {
+        "id": "40",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512210/DoiThay-HoQuangHieu_tzl8tg.mp3",
+        "name": "Đôi Thay",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Hồ Quang Hiếu",
+        "type": "mp3"
+    },
+    {
+        "id": "41",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512209/D%C3%B2ng_th%E1%BB%9Di_gian_Nguy%E1%BB%85n_H%E1%BA%A3i_Phong_msschm.mp3",
+        "name": "Dòng Thời Gian",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Nguyễn Hải Phong",
+        "type": "mp3"
+    },
+    {
+        "id": "42",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512209/ChoNgayMuaTan-NooPhuocThinhfeatTonnyViet_r1wbwm.mp3",
+        "name": "Chờ Ngày Mưa Tan",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Noo Phước Thịnh feat. Tonny Việt",
+        "type": "mp3"
+    },
+    {
+        "id": "43",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512206/divedau_lrubkh.mp3",
+        "name": "Đi về đâu",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Tiên Tiên",
+        "type": "mp3"
+    },
+    {
+        "id": "44",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512207/DemNgayXaEm-OnlyCLouHoang_kz9ybf.mp3",
+        "name": "Đêm Ngày Xa Em",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "OnlyC Ft. Lou Hoàng",
+        "type": "mp3"
+    },
+    {
+        "id": "45",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512205/C%C3%93_%C4%90I%E1%BB%80U_G%C3%8C_SAO_KH%C3%94NG_N%C3%93I_C%C3%99NG_ANH_-_TRUNG_QU%C3%82N_wcvshk.mp3",
+        "name": "Có Điều Gì Sao Không Nói Cùng Anh",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Trung Quân",
+        "type": "mp3"
+    },
+    {
+        "id": "46",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512204/DeAnhBenEm-TrinhDinhQuang_oljp5w.mp3",
+        "name": "Để Anh Bên Em",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Trịnh Đình Quang",
+        "type": "mp3"
+    },
+    {
+        "id": "47",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512204/ConLaiGiSauConMua-HoQuangHieu_fbzpwj.mp3",
+        "name": "Còn Lại Gì Sau Cơn Mưa",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Hồ Quang Hiếu",
+        "type": "mp3"
+    },
+    {
+        "id": "48",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512203/DieuNgotNgaoNhat-CaoThaiSon_b5ugfw.mp3",
+        "name": "Điều Ngọt Ngào Nhất",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Cao Thái Sơn",
+        "type": "mp3"
+    },
+    {
+        "id": "49",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764512201/DiDeTroVe-SoobinHoangSon_vyi9sy.mp3",
+        "name": "Đi Để Trở Về",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Soobin Hoàng Sơn",
+        "type": "mp3"
+    },
+    {
+        "id": "50",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764527490/LacTroi-SonTungMTP_xzqz9j.mp3",
+        "name": "Lạc Trôi",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Sơn Tùng M-TP",
+        "type": "mp3"
+    },
+    {
+        "id": "51",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764527490/LacNhauCoPhaiMuonDoi_hss5yj.mp3",
+        "name": "Lạc Nhau Có Phải Muôn Đời",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Erik",
+        "type": "mp3"
+    },
+    {
+        "id": "52",
+        "url":"https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764527490/NoiNayCoAnh-SonTungMTP_nm5xzh.mp3",
+        "name": "Nơi Này Có Anh",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Sơn Tùng M-TP",
+        "type": "mp3"
+    },
+    {
+        "id": "53",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764527530/Nh%E1%BB%AFng_L%E1%BB%9Di_D%E1%BB%91i_Gian_DJ_Th%C3%A1i_Ho%C3%A0ng_Remix_Tiktok_2025_%E8%B6%8A%E5%8D%97%E9%BC%93_Hot_Tiktok_Douyin_ehgv5l.mp3",
+        "name": "Những Lời Dối Gian DJ Thái Hoàng Remix",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "Tiktok 2025 越南驴 Hot Tiktok Douyin",
+        "type": "mp3"
+    },
+    {
+        "id": "54",
+        "url": "https://res.cloudinary.com/dwk2rdfp9/video/upload/v1764527539/SauTatCa-MONSTARERIKST319_mr0tdw.mp3",
+        "name": "Sau Tất Cả",
+        "title": "Nhạc Trẻ, Tình Yêu",
+        "artist": "ERIK",
+        "type": "mp3"
+    }
 ]

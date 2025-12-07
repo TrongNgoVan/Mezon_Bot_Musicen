@@ -27,7 +27,7 @@ module.exports = async function handlePlayId(client, event) {
 
   let items, song;
   try {
-    const dbPath = path.join(__dirname, '../db/music_system.json');
+    const dbPath = process.env.MUSIC_JSON_PATH;
     const raw = fs.readFileSync(dbPath, 'utf8');
     items = JSON.parse(raw);
     song = items.find(item => item.id === musicId);
@@ -95,7 +95,7 @@ module.exports.infor = async function handleInfor(client, event) {
 
   let items, song;
   try {
-    const dbPath = path.join(__dirname, '../db/music_system.json');
+    const dbPath = process.env.MUSIC_JSON_PATH || path.join(process.cwd(), 'data', 'music_system.json');
     const raw = fs.readFileSync(dbPath, 'utf8');
     items = JSON.parse(raw);
     song = items.find(item => item.id === musicId);

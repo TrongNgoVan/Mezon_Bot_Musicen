@@ -1,6 +1,4 @@
-const axios = require('axios');
 const fs = require('fs');
-const path = require('path');
 
 module.exports = async function handleRecommend(client, event) {
   let channel;
@@ -29,17 +27,17 @@ module.exports = async function handleRecommend(client, event) {
 
   let dbJson = '';
   try {
-    const dbPath = path.join(__dirname, '../db/music_system.json');
+    const dbPath = process.env.MUSIC_JSON_PATH;
     dbJson = fs.readFileSync(dbPath, 'utf8');
   } catch (err) {
     dbJson = '';
   }
-
+// use fetch if axios is not available
   
   try {
     const geminiApiKey = process.env.GEMINI_API_KEY;
     const prompt = `Bạn là một chuyên gia về tư vấn âm nhạc. Đầu tiên, hãy đọc kho nhạc sau đây của hệ thống:\n${dbJson}\nSau đó, dựa vào yêu cầu của người dùng: '${keyword}', hãy đề xuất từ 1 đến 3 bài hát phù hợp nhất (chỉ đề xuất những bài hát thực sự phù hợp chứ không cố bịa cho nhiều), trả về dạng danh sách: ID - Tên - Nghệ sĩ ( kèm hướng dẫn "Muốn nghe nhạc vui lòng nhắn: *playid <id>").`;
-    const response = await axios.post(
+    const response = await fetch(
       'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent',
       {
         contents: [{ parts: [{ text: prompt }] }]
