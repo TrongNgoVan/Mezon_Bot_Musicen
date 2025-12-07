@@ -116,24 +116,4 @@ build có 3 cách
    pkg 
    nexe
    bun
-   
-"messages": [
-        {
-            "clan_id": "1996962163641552896",
-            "channel_id": "1997521577897365504",
-            "message_id": "1840651252657033216",
-            "code": 0,
-            "sender_id": "1950875350829371392",
-            "username": "trong.ngovan",
-            "avatar": "https://profile.mezon.ai/1969101240251977728/1950875350829371392/1950875350829371400/1761203301809_IMG_20220529_002041.jpg",
-            "content": "{\"t\":\"hi\"}",
-            "create_time": "2025-12-07T04:23:41Z",
-            "update_time": "2025-12-07T04:23:41Z",
-            "display_name": "Alexander Trọng",
-            "mentions": "[]",
-            "attachments": "[{\"filename\":\"NoiDauXotXa-MinhVuongM4U.mp3\",\"size\":4470003,\"url\":\"https://cdn.mezon.ai/1950875350829371392/1997522371933638656.mp3\",\"filetype\":\"audio/mpeg\"}]",
-            "references": "[]",
-            "create_time_seconds": 1765081421,
-            "update_time_seconds": 1765081421,
-            "hide_editted": true
-        },
+  

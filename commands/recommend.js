@@ -62,5 +62,6 @@ module.exports = async function handleRecommend(client, event) {
     console.error('Lỗi khi gọi API Gemini:', err);
     const msg = await channel.messages.fetch(event.message_id);
     await msg.reply({ t: 'Có lỗi khi gọi API Gemini.' });
+    return;
   }
 }

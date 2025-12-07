@@ -59,10 +59,15 @@ jobs:
           $prod = $env:PROD_DIR
           $svc  = $env:SERVICE_NAME
           $exe  = Join-Path $PWD "artifact\bot.exe"
-
-          Write-Host "Stopping service if exists..."
+          $exeName = "bot.exe"
           if (Get-Service -Name $svc -ErrorAction SilentlyContinue) {
-            Stop-Service -Name $svc -Force
+            Write-Host "Killing $svc service"
+            taskkill /F /FI "SERVICES eq $svc"
+            Start-Sleep -Seconds 1
+          }
+          if (tasklist | findstr /I $exeName) {
+            Write-Host "Killing $exeName process..."
+            taskkill /IM $exeName /F
             Start-Sleep -Seconds 1
           }
 

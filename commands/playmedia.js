@@ -74,10 +74,14 @@ module.exports = async function commandPlayMedia(client, event) {
         ]
       }
     ];
-
+  try {
     const channelId = event.channel_id;
     const channel = await client.channels.fetch(channelId);
     const message = await channel.messages.fetch(event.message_id);
     await message.reply({ embed, components });
+  } catch (err) {
+    console.error('Lỗi khi gửi message phát media:', err);
+    return;
+  }
 }
 

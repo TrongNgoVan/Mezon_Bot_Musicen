@@ -42,6 +42,7 @@ module.exports = async function handleIntro(client, event) {
     ];
 
     const message = await channel.messages.fetch(event.message_id);
+    console.log("mess:", message);
     await message.reply({
       t,
       mk
@@ -49,5 +50,6 @@ module.exports = async function handleIntro(client, event) {
 
   } catch (err) {
     console.error(err);
+    return;
   }
 }

@@ -23,5 +23,6 @@ module.exports = async function handlePlayURL(client, event) {
     await msg.reply({ t: `Đã gửi yêu cầu phát nhạc. Kết quả: ${typeof playResult === "object" ? JSON.stringify(playResult) : playResult}` });
   } catch (err) {
     console.error(err);
+    return;
   }
 };

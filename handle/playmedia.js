@@ -17,10 +17,14 @@ module.exports = async function handlePlayMedia(client, ev) {
   let missing = [];
   if (!idMedia || !formData[idMedia]) missing.push("select-media");
 
-
-
-  const channel = await client.channels.fetch(channelId);
-  const message = await channel.messages.fetch(messageId);
+  let channel;
+  let message;
+  try {
+    channel = await client.channels.fetch(channelId);
+    message = await channel.messages.fetch(messageId);
+  } catch (err) {
+    return;
+  }
   const mezon_user_id = ev.user_id || ev.userId || ev.userID;
   // console.log('Mezon User ID:', mezon_user_id);
   // console.log('Form Data:', formData);

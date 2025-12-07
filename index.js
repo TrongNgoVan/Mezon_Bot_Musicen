@@ -10,6 +10,7 @@ const handleInfor = require("./commands/infor");
 const handleRecommend = require("./commands/recommend");
 const commandPlayMedia = require("./commands/playmedia");
 const handlePlayMedia = require("./handle/playmedia");
+const handleAddMusic = require("./commands/addmusic");
 
 async function main() {
   const client = new MezonClient({ botId: process.env.BOT_ID, token: process.env.BOT_TOKEN});// Nếu bot trong Product thì dùng cái này
@@ -63,7 +64,10 @@ async function main() {
     if (text.startsWith("*recommend")) {
       return handleRecommend(client, event);
     }
-
+    
+    if (text.startsWith("*addmusic")) {
+      return handleAddMusic(client, event);
+    }
   });
 
 }

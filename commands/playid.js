@@ -120,5 +120,6 @@ module.exports.infor = async function handleInfor(client, event) {
     });
   } catch (err) {
     console.error('Lỗi khi gửi reply:', err);
+    return;
   }
 }
