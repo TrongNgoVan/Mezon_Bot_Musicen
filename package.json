@@ -11,7 +11,7 @@
   "dependencies": {
     "bot-music-sample": "file:",
     "dotenv": "^16.4.5",
-    "mezon-sdk": "^2.8.29"
+    "mezon-sdk": "^2.8.39"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
